@@ -1,0 +1,213 @@
+.cartContainer {
+  padding-top: 6rem;
+  height: calc(100vh);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.cart-details {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.cart-details .fa-shopping-basket {
+  font-size: 6rem;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.basket {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.basket img {
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+}
+.cartMsgBoxWrapper {
+  width: 40%;
+  margin: 0 auto;
+}
+@media (max-width: 750px) {
+  .cartMsgBoxWrapper {
+    width: 60%;
+  }
+}
+@media (max-width: 450px) {
+  .cartMsgBoxWrapper {
+    width: 85%;
+  }
+}
+.cartMsgBoxWrapper > div {
+  background-color: var(--dark);
+  display: flex;
+  justify-content: space-around;
+}
+.cartMsgBoxWrapper > div > span {
+  color: var(--candy);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+.cartMsgBoxWrapper > div > a {
+  color: var(--white);
+  font-size: 1.4rem;
+}
+.cartMsgBoxWrapper > div > a:hover {
+  color: var(--pink);
+}
+.cart-details ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+}
+.cart-details > ul > li {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: var(--candy);
+  box-shadow: 0 2px 5px rgba(247, 115, 126, 0.8);
+  margin-bottom: 1rem;
+}
+
+.cart-details img {
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.cartInfo {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cartInfo a {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: var(--dark);
+}
+.cartInfo .selectWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+.cartInfo .selectWrapper div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cartInfo .selectWrapper div span {
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.selectWrapper select {
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  background-color: var(--white);
+  color: var(--dark);
+  cursor: pointer;
+  text-align: center;
+}
+.cartInfo button {
+  border: none;
+  outline: none;
+  padding: 0.8rem 2rem;
+  background-color: transparent;
+  color: var(--white);
+  cursor: pointer;
+  border-radius: 5px;
+}
+.cartInfo .trash-bin-img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.cartInfo button:hover .trash-bin-img {
+  transform: scale(1.2);
+}
+.cart-price-checkoutBtn {
+  background-color: var(--pink);
+  padding-top: 1rem;
+  height: 10%;
+  width: 100%;
+}
+.cart-price-checkoutBtn ul {
+  display: flex;
+  justify-content: center;
+}
+.cart-price-checkoutBtn ul li {
+  padding: 2rem;
+}
+.cart-price-checkoutBtn ul li:nth-child(2) {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+}
+.cart-price-checkoutBtn ul li:nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.cart-price-checkoutBtn ul li:nth-child(1) button {
+  border: none;
+  border-radius: 0.3rem;
+  box-shadow: 0 5px 10px rgba(22, 0, 30, 0.8);
+  outline: none;
+  background-color: var(--dark);
+  padding: 1rem 4rem;
+  font-size: 1.2rem;
+  color: var(--white);
+  font-family: inherit;
+  cursor: pointer;
+}
+.cart-price-checkoutBtn ul li:nth-child(1) button:hover,
+.cart-price-checkoutBtn ul li:nth-child(1) button:focus {
+  background-color: var(--btnHover);
+  color: var(--dark);
+  font-weight: bold;
+}
+
+.cart-price-checkoutBtn .subTotal {
+  /*li*/
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+  margin-left: 1rem;
+  border-radius: 5px;
+  background-color: var(--candy);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  color: var(--dark);
+}
+.cart-price-checkoutBtn .subTotal p {
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.cart-price-checkoutBtn .subTotal span {
+  padding: 1rem;
+}
+
+/* responsiveness */
+@media (max-width: 1100px) {
+  .cart-details > ul > li {
+    transform: scale(0.9);
+    margin-bottom: 0;
+  }
+}

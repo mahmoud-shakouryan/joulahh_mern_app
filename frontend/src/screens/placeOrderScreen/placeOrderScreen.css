@@ -1,0 +1,204 @@
+.placeOrder-container {
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.placeOrder-checkoutSteps {
+  flex: 0.2;
+  display: flex;
+  justify-content: center;
+}
+.recipt-wrapper {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+}
+.recipt-wrapper ul {
+  padding: 0;
+}
+.recipt-summary {
+  min-height: 75%;
+  padding: 2rem;
+}
+
+.recipt-summary li {
+  display: flex;
+  flex-direction: column;
+}
+
+.recipt-summary > ul > li:nth-of-type(1) > div {
+  text-align: right;
+  direction: rtl;
+  background-color: var(--candy);
+  color: var(--dark);
+  padding: 1rem;
+  border-radius: 0.3rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+.recipt-summary > ul > li:nth-of-type(1) > div > p:nth-of-type(1) {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.recipt-summary > ul > li:nth-of-type(1) > div > p:nth-of-type(2) {
+  font-size: 1.3rem;
+}
+
+.orderItemsWrapper {
+  height: 100%;
+  margin-top: 2rem;
+}
+.orderItemsWrapper p.title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+.img-details-wrapper {
+  /*ul*/
+  display: flex;
+  /*flex-wrap: wrap;*/
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+.imgDetailsLi {
+  /*li*/
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 800px) {
+  .imgDetailsLi {
+    transform: scale(0.9);
+  }
+}
+.wrapperDiv {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+.imgDetailsLi .wrapperDiv {
+  background-color: var(--dark);
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.3rem;
+}
+
+.imgDetailsLi a {
+  padding: 0.5rem;
+  text-align: center;
+  color: var(--candy);
+  width: 100%;
+}
+
+.recipt-summary .priceWrapper {
+  padding: 0.3rem;
+  text-align: center;
+  color: var(--lighterdark);
+  font-weight: bold;
+}
+.recipt-summary .img-details-wrapper .imgWrapper img {
+  border-radius: 0.3rem 0.3rem 0 0;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/* price summary section ( the footer ) */
+.price-summary {
+  min-height: 25%;
+  padding: 0.5rem 2rem;
+  color: var(--dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.price-summary #title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+.price-summary > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 95%;
+  background-color: var(--pink);
+  border-radius: 0.3rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.placeOrderMsgBox {
+  background-color: #fff;
+  position: absolute;
+}
+.price-summary > ul > li:nth-of-type(2) {
+  margin-bottom: 1rem;
+}
+.price-summary li {
+  width: 100%;
+}
+.price-summary .recipt {
+  display: flex;
+  justify-content: center;
+}
+.price-summary .recipt > div {
+  width: 10rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.price-summary .recipt > div > div:nth-of-type(1) {
+  margin-bottom: 0.5rem;
+}
+.price-summary .buttonWrapper {
+  text-align: center;
+}
+.price-summary button {
+  border: none;
+  border-radius: 0.3rem;
+  box-shadow: 0 5px 10px rgba(22, 0, 30, 0.8);
+  outline: none;
+  background-color: var(--dark);
+  width: 15rem;
+  height: 4rem;
+  font-size: 1.2rem;
+  color: var(--white);
+  font-family: inherit;
+  cursor: pointer;
+}
+.price-summary button span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.price-summary button:hover,
+.price-summary button:focus {
+  background-color: var(--btnHover);
+  color: var(--dark);
+  font-weight: bold;
+}
+
+/* responsiveness */
+@media (max-width: 500px) {
+  .recipt-summary .img-details-wrapper .imgDetailsLi .wrapperDiv {
+    font-size: 0.8rem;
+  }
+  .price-summary button {
+    width: 11rem;
+    padding: 1rem 2rem;
+    font-size: .9rem;
+  }
+}
+@media (max-width: 350px) {
+  .recipt-summary .img-details-wrapper .imgDetailsLi .wrapperDiv {
+    font-size: 0.6rem;
+  }
+}

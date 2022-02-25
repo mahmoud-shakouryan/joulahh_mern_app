@@ -1,0 +1,202 @@
+.orderScreenWrapper {
+  padding-top: 6rem;
+}
+.orderScreenLoadingBox {
+  width: 30%;
+  margin: 0 auto;
+}
+.orderScreenMsgBox {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+.orderScreen {
+  height: 100vh;
+}
+.orderScreen .msg div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  padding: 1rem 0rem;
+  width: 100px;
+  text-align: center;
+  font-weight: bold;
+  color: (--dark);
+  box-shadow: none;
+
+}
+.buyCode {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.2rem;
+  padding-right: 3rem;
+  color: var(--dark);
+}
+
+.orderScreenDetails {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.orderScreenShipping {
+  /*div*/
+  padding-top: 1rem;
+  flex: 3;
+}
+.orderScreenShipping > ul {
+  padding: 0.5rem 1.5rem 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.orderScreenShipping li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.6);
+  margin-bottom: 0.5rem;
+}
+.shippingDetails {
+  /* 1st li of .orderScreenShipping*/
+  flex: 3;
+  font-size: 1.2rem;
+}
+.shippingDetails > strong {
+  margin-bottom: 1rem;
+}
+.shippingDetails .code {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.shippingDetails span > p:nth-of-type(1) {
+  margin-left: 0.5rem;
+}
+.shippingDetails span {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+.paymentDetails {
+  /* 2nd li of .orderScreenShipping*/
+  flex: 1;
+  padding-top: 1rem;
+  font-size: 1.2rem;
+}
+.paymentDetails > p:nth-of-type(1) {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.paymentDetails .msg-notPaid{
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+.paymentDetails .msg-notPaid >button{
+  margin-right: 1.5rem;
+  z-index: 0;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  background-color: var(--dark);
+  padding: 1rem 2.6rem;
+  box-shadow: .2rem .3rem .3rem rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  position: relative;
+  font-family: shabnam, Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  color: var(--candy);
+  cursor: pointer;
+}
+.paymentDetails .msg-notPaid >button:hover{
+  transform: scale(1.04);
+}
+.ordersImgList {
+  /* 3rd li of .orderScreenShipping*/
+  flex: 3;
+}
+.ordersImgList > p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.ordersImgList__ul {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.ordersImgList__ul__li {
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  width: 15rem;
+  overflow: hidden;
+}
+.ordersImgList__ul__li > div {
+  margin-bottom: 0.5rem;
+}
+.ordersImgList__ul__li div:nth-of-type(1) {
+  width: 100%;
+}
+.ordersImgList__ul__li div:nth-of-type(2) {
+  width: 100%;
+  text-align: center;
+}
+.ordersImgList__ul__li div:nth-of-type(3) {
+  width: 100%;
+  text-align: center;
+}
+.ordersImgList img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.orderSummaryWrapper {
+  flex: 1;
+  padding: 0 1.5rem;
+}
+.orderSummaryWrapper__div {
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.6);
+}
+.orderSummaryWrapper p {
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.orderSummary {
+  /*ul*/
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.3rem;
+  max-width: 50rem;
+  margin: auto;
+}
+.orderSummary .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.orderSummary .wrapper > div:nth-of-type(1) {
+  margin-bottom: 0.5rem;
+}
+.orderSummary .wrapper > div:nth-of-type(2) {
+  display: flex;
+}

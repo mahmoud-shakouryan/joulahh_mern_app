@@ -1,0 +1,234 @@
+
+.header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 3rem;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hamMobileOnly,
+.badgeMobileOnly,
+.sidebar {
+  display: none;
+}
+
+.brand {
+  margin-left: 1rem;
+}
+.brand a {
+  font-weight: bold;
+  font-size: 2rem;
+  color: var(--dark);
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.navLinks > div {
+  margin: 0 0.3rem;
+  flex: 1;
+  width: 10rem;
+  display: flex;
+  position: relative;
+  height: 100%;
+}
+
+.navLinks a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark);
+  font-family: shabnam_light, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 3px;
+}
+
+.navLinks > div > a > p::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  transition: width 0.3s;
+  background-color: var(--dark);
+}
+.navLinks > div > a > p:hover::after {
+  width: 100%;
+}
+.fa-caret-down {
+  margin-left: 0.4rem;
+}
+.fa-shopping-basket {
+  font-size: 1.3rem;
+  font-weight: normal;
+  position: relative;
+  color: var(--dark);
+}
+/*inja hover tooltip*/
+.cart-badge {
+  padding-bottom: 0.5rem;
+}
+
+.cart-badge span {
+  /*badge*/
+  position: absolute;
+  top: -4px;
+  left: 12px;
+  font-size: 1.3rem;
+  color: var(--dark);
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 50%;
+  border: 1px solid var(--pink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--candy);
+}
+.user-dropdown-content {
+  /*ul*/
+  position: absolute;
+  display: none;
+  right: 1rem;
+  top: 2.5rem;
+  width: 15rem;
+  background-color: var(--dark);
+  border-radius: 0.3rem;
+  text-align: right;
+  font-size: 1.2rem;
+  overflow: hidden;
+  padding: 0;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+}
+.user-dropdown-content > li {
+  padding: 1rem 0.5rem;
+}
+
+.user-dropdown-content > li > a {
+  font-weight: normal;
+  display: flex;
+  justify-content: flex-end;
+  color: var(--white);
+}
+
+.user-dropdown-content.active {
+  display: block;
+}
+
+.admin-dropdown-content {
+  /*ul*/
+  background-color: var(--dark);
+  position: absolute;
+  display: none;
+  right: 2.8rem;
+  top: 2.5rem;
+  width: 15rem;
+  background-color: var(--dark);
+  margin: 0;
+  border-radius: 0.5rem;
+  text-align: right;
+  font-size: 1.2rem;
+  overflow: hidden;
+  padding: 0;
+  color: var(--white);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.admin-dropdown-content > li {
+  padding: 1rem 0.5rem;
+}
+.admin-dropdown-content > li:hover,
+.user-dropdown-content > li:hover {
+  background-color: var(--lighterdark);
+  cursor: pointer;
+}
+.admin-dropdown-content > li > a {
+  font-weight: normal;
+  color: var(--gray);
+  display: flex;
+  justify-content: flex-end;
+}
+.admin-dropdown-content.active {
+  display: block;
+}
+.dropDownExit {
+  /*div*/
+  height: 2rem;
+  font-size: 1.3rem;
+}
+
+.dropDownExit > li {
+  padding: 0.5rem 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--white);
+}
+.dropDownExit > li:hover {
+  cursor: pointer;
+  color: var(--candy);
+  font-size: 1.5rem;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .navLinks {
+    display: none;
+  }
+  .header {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    height: 3rem;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+  }
+
+  .hamMobileOnly {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 2rem;
+    height: 2rem;
+  }
+  .fa-bars {
+    color: var(--dark);
+    font-size: 2.5rem;
+    cursor: pointer;
+  }
+  .badgeMobileOnly {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+  }
+  .brand {
+    text-align: right;
+    flex: 1;
+  }
+  .sidebar {
+    display: block;
+  }
+}
+
+@media (max-width: 487px) {
+  .brand {
+    margin-right: 1.5rem;
+  }
+}

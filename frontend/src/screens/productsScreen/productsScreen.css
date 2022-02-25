@@ -1,0 +1,21 @@
+.productsContainer{
+    height: 100vh;
+    width: 100vw;
+    padding-top: 3rem;
+    overflow: auto;
+}
+
+.loadBox .loading{
+    width: 30%;
+    margin: auto;
+}
+.msgBox{
+    background-color: rgb(194, 34, 34);
+}
+.productsList{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
