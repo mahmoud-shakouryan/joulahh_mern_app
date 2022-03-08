@@ -1,10 +1,10 @@
 import axios from "axios";
 import * as actions from "./actionTypes";
 
+
 const axiosInstance = axios.create({
   baseURL: process.env.REACT_APP_API_URL,
 });
-
 
 export const signin = (email, password) => {
   return async (dispatch) => {

@@ -38,12 +38,12 @@ app.use((err, req, res, next) => {   //age router'e tuye expressAsyncHandler be 
 })
 
 // serve static assets if in production
-// if(process.env.NODE_ENV){
-//   app.use(express.static('../frontend/build'));        //set static folder
-//   app.get('*', (req, res) => {
-//     res.sendFile(path.resolve(__dirname, '../frontend', 'build', 'index.html'));
-//   })
-// }
+if(process.env.NODE_ENV){
+  app.use(express.static('../frontend/build'));        //set static folder
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, '../frontend', 'build', 'index.html'));
+  })
+}
 
 
 

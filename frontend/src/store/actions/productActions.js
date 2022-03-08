@@ -5,7 +5,6 @@ const axiosInstance = axios.create({
   baseURL: process.env.REACT_APP_API_URL,
 });
 
-
 export const listProducts = () => {
   return async (dispatch) => {
     dispatch({ type: actions.PRODUCT_LIST_REQUEST });
