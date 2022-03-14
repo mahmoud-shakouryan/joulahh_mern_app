@@ -1,3 +1,4 @@
+//this data is to setup the mongodb
 import bcrypt from 'bcryptjs'
 const data = {
   users:[
